@@ -26,7 +26,7 @@ app.use('/api/database',require('./routes/contactRoutes'));
 app.use('/api/volunteer',require('./routes/volunteerRoutes'));
 
 app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname,'../frontend/build/intex.html'))
+    res.sendFile(path.join(__dirname,'../frontend/build/index.html'))
 })
 
 app.use(errorHandler);//Overides default ErrorHandler
