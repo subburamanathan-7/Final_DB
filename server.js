@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended:false})) //urlEncoded
 app.use(cors())
 //Static Files
 
-app.use(express.static(path.join(__dirname,'../frontend/build')))
+app.use(express.static(path.join(__dirname,'./frontend/build')))
 
 app.use('/api/database',require('./routes/contactRoutes'));
 app.use('/api/volunteer',require('./routes/volunteerRoutes'));
