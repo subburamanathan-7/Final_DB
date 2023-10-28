@@ -12,7 +12,6 @@ const path = require('path')
 
 connectDB()
 const app = express();
-dotenv.config();
 
 app.use(express.json()) //Body Parser
 app.use(express.urlencoded({extended:false})) //urlEncoded
