@@ -16,8 +16,9 @@ dotenv.config();
 
 app.use(express.json()) //Body Parser
 app.use(express.urlencoded({extended:false})) //urlEncoded
-app.use(cors()) //Cross-Orgin Access
 
+//Cross-Orgin Access
+app.use(cors())
 //Static Files
 
 app.use(express.static(path.join(__dirname,'../frontend/build')))
